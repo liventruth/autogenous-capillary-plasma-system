@@ -1,5 +1,6 @@
 # autogenous-capillary-plasma-system
 Autogenous Capillary-Plasma System (ACPS)
+<img width="955" height="603" alt="Screenshot_20260701_154140_Google" src="https://github.com/user-attachments/assets/83f3d1e0-fcd9-4aec-9c91-6b802de3915c" />
 
 An open-source, zero-power water purification architecture utilizing passive acoustophoresis, structural color chelation, and piezo-driven non-thermal plasma.
 
