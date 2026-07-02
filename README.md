@@ -45,3 +45,18 @@ APPENDIX_C_PHONONIC_EXTRUSION.md: Slicer parameters and firmware-level macros fo
 CONTRIBUTING.md
 
 CONTRIBUTING.md: Contribution guidelines and open-source license documentation.
+
+## Appendix A: COTS Hardware & Procurement Specifications
+
+While the structural housing and chelation core are fully open-source and fabricated locally, the plasma generation stage relies on standard, mass-produced Commercial Off-The-Shelf (COTS) piezoelectric elements to maintain a sub-$10 build cost. 
+
+### Piezoelectric Element Requirements
+The internal Venturi nozzle housing is slotted to accept standard cylindrical or rectangular PZT (Lead Zirconate Titanate) crystal elements salvaged or bulk-purchased from industrial supply chains.
+
+*   **Primary Sourcing Pathway:** Standard push-button mechanical piezo igniters (commonly manufactured for commercial gas grills or utility lighters).
+*   **Mechanical Input Threshold:** The fluidic accumulator's snap-valve must deliver a minimum mechanical impact force of $\geq 15\text{ N}$ against the crystal face.
+*   **Electrical Output Target:** The chosen element must reliably yield a momentary open-circuit voltage pulse of $10\text{ kV}$ to $15\text{ kV}$ upon mechanical deformation to ignite the non-thermal Dielectric Barrier Discharge (DBD) plasma arc across the fluid constriction.
+
+### Integration Protocol
+During the digital fabrication of the Venturi nozzle housing, the printing sequence is paused at layer height $42.4\text{ mm}$ (if utilizing our optimized Klipper macro footprint). The COTS piezo crystals and their corresponding recessed tungsten electrode pins are slipped directly into the printed internal cavities. Printing then resumes, permanently potting and sealing the electronics within the waterproof PETG metamaterial matrix without requiring external fasteners or gaskets.
+
